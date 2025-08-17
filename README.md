@@ -1,292 +1,253 @@
-# 🤖 AI-Powered Hiring Evaluation System
+# 🚀 AI Hiring System - Intelligent Candidate Evaluation & Management
 
-A comprehensive AI-driven hiring platform that uses machine learning to evaluate candidates, detect biases, and provide data-driven hiring insights.
+[![Firebase](https://img.shields.io/badge/Firebase-Hosted-orange?logo=firebase)](https://ai-hiring-system.web.app)
+[![React](https://img.shields.io/badge/React-18.0+-blue?logo=react)](https://reactjs.org/)
+[![Material-UI](https://img.shields.io/badge/Material--UI-5.0+-blue?logo=mui)](https://mui.com/)
+[![Python](https://img.shields.io/badge/Python-3.8+-green?logo=python)](https://python.org/)
+[![FastAPI](https://img.shields.io/badge/FastAPI-0.100+-green?logo=fastapi)](https://fastapi.tiangolo.com/)
+[![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
-## 🚀 Features
+> **Live Demo**: [https://ai-hiring-system.web.app](https://ai-hiring-system.web.app)
 
-### Core AI Capabilities
-- **Resume Parsing**: Extract skills and information from resumes using NLP
-- **Skills Matching**: Intelligent algorithm for matching candidate skills with job requirements
-- **Bias Detection**: AI-powered detection of potential hiring biases (gender, age, location, education)
-- **Candidate Evaluation**: Comprehensive scoring based on multiple criteria
-- **Hiring Analytics**: Generate insights and strategic recommendations
+A comprehensive, AI-powered hiring management system built with modern web technologies. Streamline your recruitment process with intelligent candidate evaluation, automated bias detection, and real-time analytics.
 
-### System Features
-- **Professional Dashboard**: Real-time metrics, charts, and insights
-- **Candidate Management**: Full CRUD operations with advanced filtering
-- **Job Posting Management**: Create and manage job requirements
-- **Evaluation Engine**: Automated AI-powered candidate assessment
-- **Bias Monitoring**: Track and mitigate hiring biases
-- **Performance Analytics**: Comprehensive reporting and insights
+## ✨ Features
 
-## 🏗️ Architecture
+### 🎯 **Core Functionality**
+- **AI-Powered Evaluation**: Machine learning algorithms for candidate assessment
+- **Bias Detection**: Automated identification of potential hiring biases
+- **Skills Matching**: Intelligent matching of candidates to job requirements
+- **Real-time Analytics**: Live dashboard with hiring metrics and insights
 
-```
-┌─────────────────┐    ┌─────────────────┐    ┌─────────────────┐
-│   React Frontend│    │  FastAPI Backend│    │  AI Core System │
-│                 │    │                 │    │                 │
-│ • Dashboard     │◄──►│ • REST API      │◄──►│ • Resume Parser │
-│ • Candidates    │    │ • CORS Enabled  │    │ • Skills Matcher│
-│ • Jobs          │    │ • Async Endpoints│   │ • Bias Detector │
-│ • Evaluations   │    │ • Pydantic Models│   │ • Evaluator     │
-│ • Analytics     │    │ • Error Handling│   │ • Analytics     │
-└─────────────────┘    └─────────────────┘    └─────────────────┘
-```
+### 🏢 **Hiring Management**
+- **Candidate Management**: Complete CRUD operations for candidate profiles
+- **Job Posting System**: Create and manage job openings with requirements
+- **Interview Scheduling**: Automated interview coordination and management
+- **Document Management**: Resume upload, storage, and AI analysis
+- **Evaluation Tracking**: Comprehensive candidate evaluation history
+
+### 🔧 **Technical Features**
+- **Real-time Database**: Firebase Firestore for live data synchronization
+- **File Storage**: Firebase Storage for document management
+- **Authentication**: Secure user management and role-based access
+- **Responsive Design**: Mobile-first, cross-platform compatibility
+- **Modern UI/UX**: Material-UI components with professional design
 
 ## 🛠️ Technology Stack
 
-### Frontend
-- **React 18** - Modern UI framework
-- **Material-UI (MUI)** - Professional component library
-- **React Router** - Navigation and routing
-- **Recharts** - Data visualization
-- **Axios** - HTTP client for API calls
+### **Frontend**
+- **React 18** - Modern React with hooks and functional components
+- **Material-UI (MUI)** - Professional UI component library
+- **Firebase** - Real-time database, authentication, and storage
+- **Recharts** - Interactive data visualization and analytics
+- **React Router** - Client-side routing and navigation
 
-### Backend
+### **Backend**
 - **FastAPI** - High-performance Python web framework
-- **Uvicorn** - ASGI server
-- **Pydantic** - Data validation and serialization
-- **CORS** - Cross-origin resource sharing
+- **Python AI/ML** - scikit-learn, NLTK, NumPy, Pandas
+- **AI Components** - Resume parser, skills matcher, bias detector
+- **RESTful API** - Comprehensive API endpoints for all operations
 
-### AI/ML
-- **scikit-learn** - Machine learning algorithms
-- **NLTK** - Natural language processing
-- **TextBlob** - Text processing and analysis
-- **NumPy & Pandas** - Data manipulation and analysis
-
-## 📁 Project Structure
-
-```
-Artificial_Intellinnn_Hiring_Challenge/
-├── ai_hiring_system.py          # Core AI system
-├── test_system.py               # AI system tests
-├── requirements.txt             # Python dependencies
-├── README.md                   # This file
-├── frontend/                   # React frontend
-│   ├── public/
-│   ├── src/
-│   │   ├── components/         # Reusable components
-│   │   ├── pages/             # Page components
-│   │   ├── App.js             # Main app component
-│   │   └── index.js           # Entry point
-│   ├── package.json           # Frontend dependencies
-│   └── README.md              # Frontend documentation
-└── backend/                    # FastAPI backend
-    ├── app.py                 # Main API application
-    ├── requirements.txt       # Backend dependencies
-    ├── start_server.py       # Server startup script
-    ├── test_api.py           # API tests
-    └── README.md             # Backend documentation
-```
+### **Infrastructure**
+- **Firebase Hosting** - Global CDN with SSL
+- **Firebase Firestore** - NoSQL cloud database
+- **Firebase Storage** - Cloud file storage
+- **Firebase Authentication** - User management and security
 
 ## 🚀 Quick Start
 
-### Prerequisites
-- **Python 3.8+** with pip
-- **Node.js 16+** with npm
-- **Git** for cloning the repository
+### **Prerequisites**
+- Node.js 16+ and npm
+- Python 3.8+
+- Firebase account
 
-### 1. Clone and Setup
+### **1. Clone the Repository**
 ```bash
-git clone <repository-url>
-cd Artificial_Intellinnn_Hiring_Challenge
+git clone https://github.com/yourusername/ai-hiring-system.git
+cd ai-hiring-system
 ```
 
-### 2. Backend Setup
+### **2. Frontend Setup**
 ```bash
-# Install Python dependencies
-cd backend
-pip install -r requirements.txt
-
-# Start the backend server
-python start_server.py
-```
-
-The backend will be available at `http://localhost:8000`
-
-### 3. Frontend Setup
-```bash
-# In a new terminal, install frontend dependencies
 cd frontend
 npm install
-
-# Start the React development server
 npm start
 ```
 
-The frontend will be available at `http://localhost:3000`
-
-### 4. Access the System
-- **Frontend**: http://localhost:3000
-- **Backend API**: http://localhost:8000
-- **API Documentation**: http://localhost:8000/docs
-- **ReDoc**: http://localhost:8000/redoc
-
-## 📖 API Documentation
-
-### Core Endpoints
-- `GET /` - API information
-- `GET /health` - Health check
-
-### Candidates
-- `GET /candidates` - Get all candidates (with filtering)
-- `GET /candidates/{id}` - Get specific candidate
-- `POST /candidates` - Create new candidate
-- `PUT /candidates/{id}` - Update candidate
-- `DELETE /candidates/{id}` - Delete candidate
-
-### Jobs
-- `GET /jobs` - Get all jobs (with filtering)
-- `GET /jobs/{id}` - Get specific job
-- `POST /jobs` - Create new job
-- `PUT /jobs/{id}` - Update job
-- `DELETE /jobs/{id}` - Delete job
-
-### Evaluations
-- `GET /evaluations` - Get all evaluations
-- `POST /evaluations` - Create new evaluation
-
-### AI Features
-- `POST /resume/upload` - Parse resume and extract skills
-- `POST /skills/match` - Skills matching
-- `POST /bias/detect` - Bias detection
-
-### Analytics
-- `GET /analytics/dashboard` - Dashboard analytics
-- `GET /analytics/candidates` - Candidate analytics
-- `GET /analytics/jobs` - Job analytics
-- `GET /analytics/bias` - Bias analytics
-
-## 🧪 Testing
-
-### Backend Testing
+### **3. Backend Setup**
 ```bash
 cd backend
-python test_api.py
+pip install -r requirements.txt
+python app.py
 ```
 
-### Frontend Testing
-```bash
-cd frontend
-npm test
+### **4. Firebase Configuration**
+1. Create a Firebase project at [Firebase Console](https://console.firebase.google.com/)
+2. Enable Firestore Database, Authentication, and Storage
+3. Update `frontend/src/firebase/config.js` with your credentials
+4. Deploy to Firebase Hosting: `firebase deploy`
+
+## 📱 Live Demo
+
+**🌐 Production URL**: [https://ai-hiring-system.web.app](https://ai-hiring-system.web.app)
+
+Experience the full system with:
+- Real-time candidate management
+- AI-powered evaluations
+- Interactive analytics dashboard
+- Professional user interface
+
+## 🏗️ Project Structure
+
+```
+ai-hiring-system/
+├── frontend/                 # React application
+│   ├── src/
+│   │   ├── components/      # Reusable UI components
+│   │   ├── pages/          # Application pages
+│   │   ├── firebase/       # Firebase configuration & services
+│   │   └── App.js          # Main application component
+│   ├── public/             # Static assets
+│   └── package.json        # Frontend dependencies
+├── backend/                 # FastAPI server
+│   ├── app.py              # Main API server
+│   ├── ai_components/      # AI/ML modules
+│   └── requirements.txt    # Python dependencies
+├── docs/                   # Documentation
+└── README.md               # This file
 ```
 
-### AI System Testing
-```bash
-python test_system.py
-```
+## 🔐 API Endpoints
 
-## 🔧 Development
+### **Candidates**
+- `GET /api/candidates` - List all candidates
+- `POST /api/candidates` - Create new candidate
+- `PUT /api/candidates/{id}` - Update candidate
+- `DELETE /api/candidates/{id}` - Delete candidate
 
-### Backend Development
-```bash
-cd backend
-# Start with auto-reload for development
-python start_server.py --reload --debug
-```
+### **Jobs**
+- `GET /api/jobs` - List all jobs
+- `POST /api/jobs` - Create new job
+- `PUT /api/jobs/{id}` - Update job
+- `DELETE /api/jobs/{id}` - Delete job
 
-### Frontend Development
-```bash
-cd frontend
-# Start with hot reload
-npm start
-```
+### **Evaluations**
+- `GET /api/evaluations` - List all evaluations
+- `POST /api/evaluations` - Run new evaluation
+- `GET /api/evaluations/{id}` - Get evaluation details
 
-### Code Quality
-```bash
-# Backend
-cd backend
-pip install black flake8
-black .
-flake8 .
+### **Analytics**
+- `GET /api/analytics` - Get hiring metrics
+- `GET /api/analytics/dashboard` - Dashboard data
 
-# Frontend
-cd frontend
-npm run lint
-```
+## 🤖 AI Components
 
-## 📊 Sample Data
+### **Resume Parser**
+- Extracts key information from resumes
+- Identifies skills, experience, and education
+- Supports multiple document formats
 
-The system comes with pre-loaded sample data:
-- **Candidates**: 4 sample candidates with different skill sets
-- **Jobs**: 2 sample job postings
-- **Evaluations**: Sample evaluation results
+### **Skills Matcher**
+- ML-based skills assessment
+- Job-candidate compatibility scoring
+- Intelligent recommendation system
 
-## 🎯 Use Cases
+### **Bias Detector**
+- Identifies potential hiring biases
+- Ensures fair evaluation process
+- Provides bias analysis reports
 
-### For HR Professionals
-- **Streamlined Hiring**: Automated candidate evaluation
-- **Bias Reduction**: AI-powered bias detection and mitigation
-- **Data-Driven Decisions**: Comprehensive analytics and insights
-- **Skills Matching**: Intelligent candidate-job matching
+### **Candidate Evaluator**
+- Comprehensive candidate assessment
+- Multi-factor evaluation scoring
+- Performance prediction algorithms
 
-### For Hiring Managers
-- **Efficient Screening**: Quick candidate assessment
-- **Objective Evaluation**: Consistent evaluation criteria
-- **Performance Insights**: Track hiring effectiveness
-- **Strategic Planning**: Data-driven hiring strategies
+## 📊 Features in Detail
 
-### For Organizations
-- **Compliance**: Bias detection and mitigation
-- **Efficiency**: Reduced time-to-hire
-- **Quality**: Better candidate-job matches
-- **Analytics**: Hiring performance insights
+### **Dashboard Analytics**
+- Real-time hiring metrics
+- Interactive charts and graphs
+- Performance tracking
+- Success rate analysis
 
-## 🔒 Security Features
+### **Candidate Management**
+- Profile creation and editing
+- Skills assessment
+- Experience tracking
+- Document management
 
-- **Input Validation**: All inputs validated using Pydantic
-- **Error Handling**: Secure error messages without data leakage
-- **CORS Configuration**: Properly configured for production use
-- **Data Sanitization**: Clean and safe data processing
+### **Job Management**
+- Job posting creation
+- Requirements specification
+- Applicant tracking
+- Status management
+
+### **Interview System**
+- Automated scheduling
+- Calendar integration
+- Interview feedback
+- Result tracking
 
 ## 🚀 Deployment
 
-### Production Considerations
-- **Environment Variables**: Configure for production settings
-- **Authentication**: Implement JWT-based authentication
-- **Rate Limiting**: Add API rate limiting
-- **HTTPS**: Use SSL/TLS in production
-- **Monitoring**: Implement logging and monitoring
-- **Database**: Use production database (PostgreSQL recommended)
-
-### Docker Support
+### **Firebase Hosting**
 ```bash
-# Build and run with Docker (future enhancement)
-docker build -t ai-hiring-system .
-docker run -p 8000:8000 ai-hiring-system
+cd frontend
+npm run build
+firebase deploy
+```
+
+### **Environment Variables**
+Create `.env` files for configuration:
+```env
+# Frontend
+REACT_APP_FIREBASE_API_KEY=your_api_key
+REACT_APP_FIREBASE_PROJECT_ID=your_project_id
+
+# Backend
+DATABASE_URL=your_database_url
+API_KEY=your_api_key
 ```
 
 ## 🤝 Contributing
 
+We welcome contributions! Please see our [Contributing Guidelines](CONTRIBUTING.md) for details.
+
+### **Development Setup**
 1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Add tests for new functionality
-5. Ensure all tests pass
-6. Submit a pull request
+2. Create a feature branch: `git checkout -b feature/amazing-feature`
+3. Commit changes: `git commit -m 'Add amazing feature'`
+4. Push to branch: `git push origin feature/amazing-feature`
+5. Open a Pull Request
 
 ## 📝 License
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## 🙏 Acknowledgments
 
-- **FastAPI** team for the excellent web framework
-- **Material-UI** team for the beautiful component library
-- **scikit-learn** team for the machine learning tools
-- **NLTK** team for natural language processing capabilities
+- **Material-UI** for the beautiful component library
+- **Firebase** for the robust backend infrastructure
+- **FastAPI** for the high-performance API framework
+- **React** for the modern frontend framework
 
 ## 📞 Support
 
-For questions, issues, or contributions:
-- Create an issue in the repository
-- Contact the development team
-- Check the documentation at `/docs` endpoint
+- **Issues**: [GitHub Issues](https://github.com/yourusername/ai-hiring-system/issues)
+- **Documentation**: [Project Wiki](https://github.com/yourusername/ai-hiring-system/wiki)
+- **Email**: your.email@example.com
+
+## 🌟 Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=yourusername/ai-hiring-system&type=Date)](https://star-history.com/#yourusername/ai-hiring-system&Date)
 
 ---
 
-**🎉 Welcome to the AI-Powered Hiring Revolution! 🎉**
+<div align="center">
 
-Transform your hiring process with intelligent automation, bias detection, and data-driven insights.
-#   a r t i f i c i a l _ i n t e l l i g e n c e _ h i r i n g  
- 
+**Made with ❤️ for better hiring experiences**
+
+[![Deploy to Firebase](https://img.shields.io/badge/Deploy%20to-Firebase-orange?logo=firebase)](https://ai-hiring-system.web.app)
+[![View Demo](https://img.shields.io/badge/View-Demo-blue?logo=github)](https://ai-hiring-system.web.app)
+
+</div>
